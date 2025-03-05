@@ -6,4 +6,8 @@ npx @chakra-ui/cli snippet add
  npm i -D vite-tsconfig-paths
  npm run dev
 
-//2
+//2 router
+npm install react-router-dom
+When users navigate to different URLs, React Router matches the path specified in <Route> and renders the corresponding component.
+The <Navbar /> remains visible on every page because it is placed outside the <Routes> component.
+<Routes> is a container component from React Router that looks through its children <Route> elements and renders the first one that matches the current URL.

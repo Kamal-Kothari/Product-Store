@@ -1,12 +1,21 @@
 import { Button } from '@chakra-ui/react'
-function App() {
-  
+import { Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import CreatePage from './pages/CreatePage'
+import Navbar from './components/Navbar'
 
-  return (
-    <>
-      <Button>Click Me</Button>
-    </>
-  )
+function App() {
+
+
+    return (
+        <>
+            <Navbar />
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/create" element={<CreatePage />} />
+            </Routes>
+        </>
+    )
 }
 
 export default App
